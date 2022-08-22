@@ -1,11 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { FC } from 'react';
-import RouteStackRoute from './src/routes/RootStack';
+import React, { FC } from 'react';
+import { RootStackRoute } from './src/routes/RootStack';
 
 const App: FC = () => {
   return (
     <NavigationContainer>
-      <RouteStackRoute />
+      <RootStackRoute />
     </NavigationContainer>
   );
 };

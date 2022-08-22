@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { FC } from 'react';
-import DetailsScreen from './screens/Details';
-import HomeScreen from './screens/Home';
+import {DetailsScreen} from './screens/Details';
+import {HomeScreen} from './screens/Home';
 
 type RootStackParams = {
   home: undefined;
@@ -10,14 +10,12 @@ type RootStackParams = {
 
 const Stack = createNativeStackNavigator<RootStackParams>();
 
-const RootStackRoute: FC = () => (
+export const RootStackRoute: FC = () => (
   <Stack.Navigator initialRouteName='home'>
     <Stack.Screen name='home' component={HomeScreen} />
     <Stack.Screen name='details' component={DetailsScreen} />
   </Stack.Navigator>
 );
-
-export default RootStackRoute;
 
 declare global {
   namespace ReactNavigation {

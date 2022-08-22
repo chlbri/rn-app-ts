@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native';
 
-const DetailsScreen = () => {
+export const DetailsScreen = () => {
   return (
     <View
       style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
@@ -9,5 +9,3 @@ const DetailsScreen = () => {
     </View>
   );
 };
-
-export default DetailsScreen;

@@ -5,7 +5,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 type Props = {};
 
-const HomeScreen: FC<Props> = ({}) => {
+export const HomeScreen: FC<Props> = ({}) => {
   const { navigate } = useNavigation();
   return (
     <View style={styles.container}>
@@ -33,5 +33,3 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
-
-export default HomeScreen;
