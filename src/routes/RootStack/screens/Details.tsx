@@ -1,11 +1,19 @@
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 export const DetailsScreen = () => {
   return (
-    <View
-      style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
-    >
+    <View style={styles.container}>
       <Text>Details Screen</Text>
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingBottom: 40,
+  },
+});

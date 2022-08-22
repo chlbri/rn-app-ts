@@ -29,8 +29,7 @@ const styles = StyleSheet.create({
   },
   link: {
     color: 'blue',
-    // textDecorationStyle: 'dotted',
     textDecorationLine: 'underline',
-    fontSize: 20,
+    fontSize: 16,
   },
 });
